@@ -72,7 +72,6 @@ public class ChessUI extends JFrame {
             round = recomputeRoundFromReplay();
             whiteCaptured.clear();
             blackCaptured.clear();
-            recomputeCapturedFromBoard();
             refreshBoard();
             updateSidebar();
             updateTurnLabel();
@@ -110,6 +109,7 @@ public class ChessUI extends JFrame {
                 Color light = new Color(240, 217, 181);
                 Color dark = new Color(181, 136, 99);
                 btn.setBackground((r + c) % 2 == 0 ? light : dark);
+                btn.setFont(new Font("Segoe UI Symbol", Font.PLAIN, 36));
 
                 final int row = r;
                 final int col = c;
@@ -278,33 +278,34 @@ public class ChessUI extends JFrame {
         return count;
     }
 
-    private void recomputeCapturedFromBoard() {
-        // optional: you can leave this empty or implement from initial setup
-        // for now we just clear captured lists on load (already done)
-    }
-
     private String convertListToUnicode(java.util.List<String> list) {
         StringBuilder sb = new StringBuilder();
         for (String p : list) sb.append(convertPieceToUnicode(p)).append(" ");
-        return sb.toString();
-    }
-
-    private String convertPieceToUnicode(String piece) {
-        switch (piece) {
-            case "WP": return "♙";
-            case "WR": return "♖";
-            case "WN": return "♘";
-            case "WB": return "♗";
-            case "WQ": return "♕";
-            case "WK": return "♔";
-            case "BP": return "♟";
-            case "BR": return "♜";
-            case "BN": return "♞";
-            case "BB": return "♝";
-            case "BQ": return "♛";
-            case "BK": return "♚";
+            return sb.toString();
         }
-        return "";
+
+        private String convertPieceToUnicode(String piece) {
+        if (piece == null) return "";
+
+        piece = piece.trim().toUpperCase();
+
+        switch (piece) {
+            case "WP": return "\u2659"; // ♙
+            case "WR": return "\u2656"; // ♖
+            case "WN": return "\u2658"; // ♘
+            case "WB": return "\u2657"; // ♗
+            case "WQ": return "\u2655"; // ♕
+            case "WK": return "\u2654"; // ♔
+
+            case "BP": return "\u265F"; // ♟
+            case "BR": return "\u265C"; // ♜
+            case "BN": return "\u265E"; // ♞
+            case "BB": return "\u265D"; // ♝
+            case "BQ": return "\u265B"; // ♛
+            case "BK": return "\u265A"; // ♚
+        }
+
+        return ""; 
     }
 
     private String convertToChessCoord(int row, int col) {

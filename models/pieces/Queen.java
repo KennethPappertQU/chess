@@ -1,5 +1,5 @@
 //queen.java
-package SER120.chess.models.pieces;
+package models.pieces;
 
 public class Queen extends ChessPieces {
 

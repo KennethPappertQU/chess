@@ -1,14 +1,12 @@
 //App.java
-
-package SER120.chess;
-
-import SER120.chess.game.GameManager;
+import game.GameManager;
+import UI.UIGameManager;
 
 
 public class App {
 	public static void main(String [] args) {
 		System.out.println("--- Starting SER120 Chess App ---");
-        GameManager gm = new GameManager();
+        UIGameManager gm = new UIGameManager();
         gm.runGame();
         
         

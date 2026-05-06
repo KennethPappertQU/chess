@@ -1,14 +1,14 @@
 //conditionals.java
 
-package SER120.chess.game;
+package game;
 
-import SER120.chess.models.CoolBoard;
-import SER120.chess.models.pieces.Pawn;
-import SER120.chess.models.pieces.Rook;
-import SER120.chess.models.pieces.Knight;
-import SER120.chess.models.pieces.Bishop;
-import SER120.chess.models.pieces.Queen;
-import SER120.chess.models.pieces.King;
+import models.CoolBoard;
+import models.pieces.Pawn;
+import models.pieces.Rook;
+import models.pieces.Knight;
+import models.pieces.Bishop;
+import models.pieces.Queen;
+import models.pieces.King;
 
 public class Conditionals {
 	String [] currentPiece;

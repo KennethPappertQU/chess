@@ -1,13 +1,13 @@
 //GameManager.java
-package SER120.chess.game;
+package game;
 
 import java.io.File;
 import java.util.Scanner;
 
-import SER120.chess.models.CoolBoard;
-import SER120.chess.game.Conditionals;
-import SER120.chess.saveload.SaveGame;
-import SER120.chess.saveload.LoadGame;
+import models.CoolBoard;
+import game.Conditionals;
+import saveload.SaveGame;
+import saveload.LoadGame;
 
 public class GameManager {
 

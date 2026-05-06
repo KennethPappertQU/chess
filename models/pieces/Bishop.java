@@ -1,5 +1,5 @@
 //bishop.java
-package SER120.chess.models.pieces;
+package models.pieces;
 
 public class Bishop extends ChessPieces {
 
