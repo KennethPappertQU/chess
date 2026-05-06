@@ -1,9 +1,9 @@
 //SaveGame.java
 
-package SER120.chess.saveload;
+package saveload;
 
-import SER120.chess.models.CoolBoard;
-import SER120.chess.game.GameReplay;
+import models.CoolBoard;
+import game.GameReplay;
 
 import java.io.File;
 import java.io.FileWriter;

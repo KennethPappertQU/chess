@@ -1,9 +1,9 @@
 //GameReplay.java
 
-package SER120.chess.game;
+package game;
 
 import java.util.Scanner;
-import SER120.chess.models.CoolBoard;
+import models.CoolBoard;
 
 public class GameReplay {
 

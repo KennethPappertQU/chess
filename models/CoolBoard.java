@@ -1,6 +1,6 @@
 //Coolboard.java
 
-package SER120.chess.models;
+package models;
 
 public class CoolBoard extends Board {
 

@@ -1,5 +1,5 @@
 //ChessPieces.java
-package SER120.chess.models.pieces;
+package models.pieces;
 
 public abstract class ChessPieces {
 	private String firstChar;
