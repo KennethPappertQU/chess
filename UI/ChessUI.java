@@ -138,8 +138,8 @@ public class ChessUI extends JFrame {
         JLabel blackTitle = new JLabel("Black captured:");
         blackTitle.setFont(new Font("Arial", Font.BOLD, 16));
 
-        whiteCapturedLabel.setFont(new Font("Arial", Font.PLAIN, 24));
-        blackCapturedLabel.setFont(new Font("Arial", Font.PLAIN, 24));
+        whiteCapturedLabel.setFont(new Font("Segoe UI Symbol", Font.PLAIN, 36));
+        blackCapturedLabel.setFont(new Font("Segoe UI Symbol", Font.PLAIN, 36));
 
         sidebar.add(Box.createVerticalStrut(20));
         sidebar.add(title);
